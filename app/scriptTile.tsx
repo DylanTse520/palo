@@ -10,20 +10,22 @@ const ScriptTile = () => {
         </span>
         <button className="flex w-[94px] items-center justify-between rounded-[10px] bg-[#007AFF] px-[9px] py-1 text-[15px] font-medium leading-5">
           Draft 1
-          <div className="flex h-[21px] w-[22px] items-center justify-center pt-[2px]">
+          <div className="flex h-[21px] w-[22px] items-center justify-center pt-[2.2px]">
             <ChevronIcon />
           </div>
         </button>
       </div>
       <div className="relative flex h-full flex-1 flex-col rounded-b-[5px] rounded-t-[20px] border-2 border-b-0 border-solid border-[#2A2B30] bg-[#18181B]">
-        <div className="h-[59px] pl-[25px] pt-3">
-          <Image
-            src="/toolbar.png"
-            alt="Toolbar placeholder"
-            width={567}
-            height={36}
-            priority
-          />
+        <div className="h-[59px] overflow-hidden pl-[25px] pt-3">
+          <div className="w-[567px]">
+            <Image
+              src="/toolbar.png"
+              alt="Toolbar placeholder"
+              width={567}
+              height={36}
+              priority
+            />
+          </div>
         </div>
         <div
           contentEditable
